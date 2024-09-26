@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-primary-rgb: 187, 56, 56;
+  --bs-secondary-rgb:  25, 25, 25;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -77,6 +77,7 @@
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --bs-footer-color:  35, 35, 35;
 }
 
 *,
@@ -10853,11 +10854,11 @@ html {
 }
 .divider-custom .divider-custom-line {
   width: 100%;
-  max-width: 7rem;
+  max-width: 15rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: #e40a0a;
   border-radius: 1rem;
-  border-color: #2c3e50;
+  border-color: #e40a0a;
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -10866,7 +10867,7 @@ html {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: #2c3e50;
+  color: #e40a0a;
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
@@ -10970,6 +10971,11 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  background-image: url('../assets/img/HeaderImage2.png');
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10986,6 +10992,7 @@ html {
   .masthead {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
+    background-position: center 35%;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
@@ -11037,10 +11044,19 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: rgb(var(--bs-footer-color));
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: rgb(var(--bs-secondary-rgb));
+}
+
+.contact-me-email, #emailLink {
+  background-color: rgb(var(--bs-primary-rgb));
+  text-align: center;
+  color: white;
+  width: 300px;
+  border-radius: 15px;
+  align-content: center; <!-- fix center -->
 }
