@@ -11042,6 +11042,8 @@ html {
 .contact-me-email {
   border-radius: 15px;
   background-color: rgb(var(--bs-primary-rgb));
+  border-color: #932b2b;
+  border-style: solid;
   width: auto;
   margin: 25px;
   text-align: center;
@@ -11056,6 +11058,8 @@ html {
 .contact-me-email:hover {
   background-color: rgb(var(--bs-secondary-rgb));
   color: #f0f0f0;
+  border-color: var(--bs-primary);
+  border-style: solid;
 }
 
 @media (min-width: 992px) {
@@ -11093,4 +11097,26 @@ html {
   margin: 0;
   text-wrap: auto;
   white-space: normal;
+}
+
+.educationBox {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--bs-primary);
+  padding: 5px;
+  margin: 25px;
+}
+
+.educationTextB {
+  margin: 15px;
+  padding: 15px;
+}
+
+.page-section-contact {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+.leadEdu {
+  padding: 15px;
 }
